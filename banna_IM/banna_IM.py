@@ -37,7 +37,7 @@ def show_im(image, title=''):
 
 
 import skimage.util as util
-def add_noise(noise_type, percentage=0.3, im = im):
+def add_noise(im, noise_type, percentage=0.3):
     title = ""
     nimg = util.random_noise(np.array(im), mode=noise_type)*255
     return show_im(Image.fromarray(np.array(nimg, dtype = np.uint8)), title = title)
