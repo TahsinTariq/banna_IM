@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 from banna_IM import __version__
 
@@ -8,6 +8,6 @@ setup(
 
     url='https://github.com/TahsinTariq/banna_IM',
     author='Tahsin Tariq',
-    py_modules=['banna_IM'],
+    packages=find_packages(),
+    # py_modules=['banna_IM'],
 )
-
