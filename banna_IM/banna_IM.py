@@ -42,5 +42,5 @@ def add_noise(im, noise_type, percentage=0.3):
     nimg = util.random_noise(np.array(im), mode=noise_type)*255
     return show_im(Image.fromarray(np.array(nimg, dtype = np.uint8)), title = title)
 
-def median_f(size):
+def median_f(im, size):
     return show_im(Image.fromarray(cv2.medianBlur(np.array(im),size)))
